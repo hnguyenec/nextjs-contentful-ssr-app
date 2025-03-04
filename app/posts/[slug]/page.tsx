@@ -9,13 +9,13 @@ import MoreStories from "../../more-stories";
 import { getAllPosts, getPostAndMorePosts } from "@/lib/api";
 import { Markdown } from "@/lib/markdown";
 
-export async function generateStaticParams() {
-  const allPosts = await getAllPosts(false);
+//export async function generateStaticParams() {
+//  const allPosts = await getAllPosts(false);
 
-  return allPosts?.map((post) => ({
-    slug: post.slug,
-  }));
-}
+//  return allPosts?.map((post) => ({
+//    slug: post.slug,
+//  }));
+//}
 
 export default async function PostPage({
   params,
